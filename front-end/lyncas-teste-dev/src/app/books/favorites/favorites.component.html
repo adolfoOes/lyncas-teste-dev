@@ -1,0 +1,46 @@
+<div class="page-content">
+
+  <div class="loadWrapper" *ngIf="isLoadind">
+    <div class="loader"></div>
+  </div>
+
+  <div>
+
+    <app-navbar></app-navbar>
+
+  </div>
+
+  <div class="body">
+
+    <div class="books-cards">
+
+      <div *ngFor='let book of dataSourceFav'>
+
+        <div class="">
+          <div class="e-card">
+            <div class="e-card-header">
+              <div class="e-card-header-image">
+                <img src={{book.volumeInfo.imageLinks.thumbnail}}>
+              </div>
+              <div class="e-card-header-caption">
+                <div class="e-card-header-title alert-card-header">Tittle : {{book.volumeInfo.title}}</div>
+                <div class="e-card-sub-title">{{book.volumeInfo.previewLink}}</div>
+              </div>
+              <!-- <div class="card-button" *ngIf="!isFavorite(book)">
+                <button ejs-button iconCss="fa fa-star-o" (click)="toggleFavorite(book, false)"></button>
+              </div> -->
+              <div class="card-button-liked">
+                <button ejs-button iconCss="fa fa-star-o" class="card-bt-liked"
+                  (click)="toggleFavorite(book, true)"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
