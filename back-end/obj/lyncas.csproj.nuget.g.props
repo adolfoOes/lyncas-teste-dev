@@ -7,8 +7,11 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Pichau\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.4.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.9.0</NuGetToolVersion>
   </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\Pichau\.nuget\packages\" />
+  </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
@@ -17,6 +20,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\CopyMe.PostgreSQL.tt.txt</Link>
     </None>
@@ -24,6 +28,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\DataAnnotations.ttinclude</Link>
     </None>
@@ -31,6 +36,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\DataModel.ttinclude</Link>
     </None>
@@ -38,6 +44,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\EditableObject.ttinclude</Link>
     </None>
@@ -45,6 +52,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\Equatable.ttinclude</Link>
     </None>
@@ -52,6 +60,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\Humanizer.ttinclude</Link>
     </None>
@@ -59,6 +68,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\LinqToDB.PostgreSQL.Tools.ttinclude</Link>
     </None>
@@ -66,6 +76,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\LinqToDB.PostgreSQL.ttinclude</Link>
     </None>
@@ -73,6 +84,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\LinqToDB.Tools.ttinclude</Link>
     </None>
@@ -80,6 +92,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\LinqToDB.ttinclude</Link>
     </None>
@@ -87,6 +100,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\MultipleFiles.ttinclude</Link>
     </None>
@@ -94,6 +108,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\NotifyDataErrorInfo.ttinclude</Link>
     </None>
@@ -101,6 +116,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\NotifyPropertyChanged.ttinclude</Link>
     </None>
@@ -108,6 +124,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\ObsoleteAttributes.ttinclude</Link>
     </None>
@@ -115,6 +132,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\PluralizationService.ttinclude</Link>
     </None>
@@ -122,6 +140,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\T4Model.ttinclude</Link>
     </None>
@@ -129,6 +148,7 @@
       <NuGetPackageId>linq2db.PostgreSQL</NuGetPackageId>
       <NuGetPackageVersion>3.2.1</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>LinqToDB.Templates\Validation.ttinclude</Link>
     </None>
