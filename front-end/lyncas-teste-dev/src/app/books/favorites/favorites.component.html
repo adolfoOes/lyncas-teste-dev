@@ -27,11 +27,11 @@
                 <div class="e-card-sub-title">{{book.volumeInfo.previewLink}}</div>
               </div>
               <!-- <div class="card-button" *ngIf="!isFavorite(book)">
-                <button ejs-button iconCss="fa fa-star-o" (click)="toggleFavorite(book, false)"></button>
+                <button ejs-button iconCss="fa fa-star-o" (click)="showDialog(book, false)"></button>
               </div> -->
               <div class="card-button-liked">
                 <button ejs-button iconCss="fa fa-star-o" class="card-bt-liked"
-                  (click)="toggleFavorite(book, true)"></button>
+                  (click)="showDialog(book, true)"></button>
               </div>
             </div>
           </div>
@@ -40,6 +40,8 @@
 
     </div>
 
+    <ejs-dialog #confirmModal [header]="contentData" [buttons]="buttons" [width]="dialogWidth" [height]="dialogHeigth"
+      [visible]='false' [isModal]='true' (overlayClick)='clickModal($event)'></ejs-dialog>
 
   </div>
 

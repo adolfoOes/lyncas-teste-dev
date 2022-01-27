@@ -6,6 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { TextBoxAllModule } from '@syncfusion/ej2-angular-inputs';
 import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons';
 import { RestApiService } from '../shared/rest-api.service';
+import { DialogAllModule } from '@syncfusion/ej2-angular-popups';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { RestApiService } from '../shared/rest-api.service';
     SharedModule,
     TextBoxAllModule,
     ButtonAllModule,
+    DialogAllModule
   ],
   providers: [
     RestApiService

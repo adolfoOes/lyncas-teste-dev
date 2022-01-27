@@ -120,6 +120,11 @@ C:\workspace\lyncas2\lyncas-teste-dev\back-end\obj\Debug\netcoreapp3.1\lyncas.Ra
 C:\workspace\lyncas2\lyncas-teste-dev\back-end\obj\Debug\netcoreapp3.1\lyncas.csproj.CopyComplete
 C:\workspace\lyncas2\lyncas-teste-dev\back-end\obj\Debug\netcoreapp3.1\lyncas.dll
 C:\workspace\lyncas2\lyncas-teste-dev\back-end\obj\Debug\netcoreapp3.1\lyncas.pdb
-C:\workspace\lyncas2\lyncas-teste-dev\back-end\obj\Debug\netcoreapp3.1\lyncas.csproj.CoreCompileInputs.cache
-C:\workspace\lyncas2\lyncas-teste-dev\back-end\obj\Debug\netcoreapp3.1\scopedcss\bundle\lyncas.styles.css
-C:\workspace\lyncas2\lyncas-teste-dev\back-end\obj\Debug\netcoreapp3.1\lyncas.genruntimeconfig.cache
+C:\workspace\lyncas2\lyncas-teste-dev\back-end\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\workspace\lyncas2\lyncas-teste-dev\back-end\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\workspace\lyncas2\lyncas-teste-dev\back-end\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\workspace\lyncas2\lyncas-teste-dev\back-end\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+C:\workspace\lyncas2\lyncas-teste-dev\back-end\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\workspace\lyncas2\lyncas-teste-dev\back-end\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\workspace\lyncas2\lyncas-teste-dev\back-end\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\workspace\lyncas2\lyncas-teste-dev\back-end\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll

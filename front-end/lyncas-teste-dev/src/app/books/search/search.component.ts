@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModel } from '@syncfusion/ej2-angular-buttons';
 import { TextBox, TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
+import { DialogComponent, PositionDataModel } from '@syncfusion/ej2-angular-popups';
 import { RestApiService } from 'src/app/shared/rest-api.service';
 
 @Component({
@@ -10,10 +12,21 @@ import { RestApiService } from 'src/app/shared/rest-api.service';
 export class SearchComponent implements OnInit {
 
   @ViewChild('search', { static: true }) public searchInput: TextBox | undefined;
+  @ViewChild('confirmModal', { static: true }) public confirmModal: DialogComponent | undefined;
 
   isLoadind = false;
   dataSource: any[] = [];
   dataSourceFav: any[] = [];
+
+  dialogWidth = '400px';
+  dialogHeigth = '200px';
+  contentData = 'Remove book from favorites?';
+  position: PositionDataModel = { X: 'center', Y: 'center' };
+  buttons: Object[] = [{ click: this.dlgBtnOKClick.bind(this), buttonModel: { content: 'OK', isPrimary: true } },
+  { click: this.dlgBtnClick.bind(this), buttonModel: { content: 'CANCEL', isPrimary: false } }];
+
+  argsButton: any = "";
+  isFavoriteButton: any = "";
 
   constructor(public restAPI: RestApiService) { }
 
@@ -50,6 +63,32 @@ export class SearchComponent implements OnInit {
     });
   }
 
+  dlgBtnOKClick(args: any) {
+    this.toggleFavorite(this.argsButton, this.isFavoriteButton);
+    this.confirmModal?.hide();
+  }
+
+  dlgBtnClick(args: any) {
+    this.confirmModal?.hide();
+  }
+
+  showDialog(args: any, isFavorite: boolean) {
+
+    if (isFavorite) {
+
+      this.argsButton = args;
+      this.isFavoriteButton = isFavorite;
+
+      this.confirmModal?.show();
+    } else {
+      this.toggleFavorite(args, isFavorite);
+    }
+  }
+
+  clickModal(args: any) {
+    this.confirmModal?.hide();
+  }
+
   toggleFavorite(args: any, isFavorite: boolean) {
     this.isLoadind = true;
 
@@ -59,8 +98,6 @@ export class SearchComponent implements OnInit {
         this.dataSourceFav = this.dataSourceFav.filter(x => x.id != args.id);
         this.isLoadind = false;
 
-        console.log(this.dataSourceFav);
-
       }, err => {
         this.isLoadind = false;
       });
@@ -69,8 +106,6 @@ export class SearchComponent implements OnInit {
       return this.restAPI.postFavoriteBook(args.id).subscribe((data: any) => {
         this.dataSourceFav.push(args);
         this.isLoadind = false;
-
-        console.log(this.dataSourceFav);
 
       }, err => {
         this.isLoadind = false;
