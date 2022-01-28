@@ -1,12 +1,10 @@
 # lyncas-teste-dev
 
 Versões: 
-
  - Angular : 13.1.3
  - Angular CLI: 13.1.4
  - Node: 16.13.1
  - Package Manager: npm 8.3.0
- 
  - Postgree - 13
  - pgAdmin - 5.0
  
@@ -28,4 +26,5 @@ Para execução () :
  
 Para execução (Dev):
  - Baixar projetos em : https://github.com/adolfoOes/lyncas-teste-dev
+ - Instalar dependecias
  - Executar em modo de desenvolvimento
